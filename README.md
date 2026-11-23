@@ -1,3 +1,3 @@
-# chess-position-compressor
+# Chess position compressor
 
-A simple program to store compressed chess positions
+A simple training exercise for compression.

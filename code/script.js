@@ -4,7 +4,7 @@ let position_string = "";
 let position = [];
 const character_optimization_map = ["r", "n", "b", "q", "k", "p", "R", "N", "B", "Q", "K", "P", "-", "-", "-", "-"];
 // Combination for character optimization v1 for base position
-// #Ed2
+// #Ed2wwwwïïïïïïïïïïïïïïïïÝÝÝÝ
 const pieces = {
     "r": "../assets/rook-b.svg",
     "n": "../assets/knight-b.svg",
@@ -34,7 +34,8 @@ function updateGridFromPosition(pos) {
             position_string = pos.trim().replaceAll("/", "").replace(/\d/g, (digit) => '-'.repeat(Number(digit))).slice(0, 64).padEnd(64, "-");
             drawGrid();
             break;
-        case "character optimization v1":
+        /*
+            case "character optimization v1":
             //console.log(pos);
             //console.log(pos.charCodeAt(0).toString(2).padStart(8, "0"))
             pos = pos.padEnd(32, "ï");
@@ -50,7 +51,7 @@ function updateGridFromPosition(pos) {
             }
             drawGrid();
             break;
-
+        */
         default:
             console.error("Unknown compression method:", compression_method);
             return;
